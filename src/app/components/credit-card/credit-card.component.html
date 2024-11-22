@@ -1,0 +1,28 @@
+<div class="payment-card-container">
+    <h2>Cartão de Crédito/Débito</h2>
+    <form>
+      <label for="card-number">Número do Cartão</label>
+      <input id="card-number" type="text" placeholder="1234 5678 9012 3456" />
+
+      <label for="card-name">Nome impresso no cartão</label>
+      <input id="card-name" type="text" placeholder="Nome impresso no cartão" />
+
+      <div class="card-details">
+        <div>
+          <label for="card-expiry">Validade</label>
+          <input id="card-expiry" type="text" placeholder="MM/AA" />
+        </div>
+        <div>
+          <label for="card-cvv">Código de Segurança</label>
+          <input id="card-cvv" type="text" placeholder="123" />
+        </div>
+      </div>
+
+      <div class="total">
+        <p *ngIf="ultimoPedido">
+          <strong>Total do Pedido: {{ ultimoPedido.valorTotal | currency:'BRL' }}</strong>
+        </p>
+      </div>
+    </form>
+    <a href="/pedido"><button class="save" (click)="atualizarStatus( ultimoPedido, 'Pagamento aprovado')">Pronto</button></a>
+  </div>

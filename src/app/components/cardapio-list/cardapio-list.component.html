@@ -1,0 +1,33 @@
+<!-- src/app/components/prato-list/cardapio-list.component.html -->
+
+<div class="container">
+  <h2>Cardápio</h2>
+
+  <!-- Menu de pratos -->
+  <div class="menu">
+    <div *ngFor="let prato of pratos" class="card">
+      <!-- Imagem do prato -->
+      <img [src]="prato.url" alt="{{ prato.name }}">
+
+      <!-- Nome do prato -->
+      <h3>{{ prato.name }}</h3>
+
+      <!-- Descrição do prato -->
+      <p>{{ prato.description }}</p>
+
+      <!-- Preço do prato -->
+      <div class="price">R$ {{ prato.price | number: '1.2-2' }}</div>
+
+      <!-- Botão para adicionar ao carrinho -->
+      <button class="btn-default" (click)="adicionarAoCarrinho(prato.id)">
+        <i class="fa-solid fa-basket-shopping"></i>
+        Adicionar
+      </button>
+    </div>
+  </div>
+
+  <!-- Caso não haja pratos -->
+  <ng-template #noPratos>
+    <p>Não há pratos cadastrados no cardápio.</p>
+  </ng-template>
+</div>

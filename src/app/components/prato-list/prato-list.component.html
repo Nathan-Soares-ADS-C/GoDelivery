@@ -1,0 +1,25 @@
+<h2>{{ 'Lista de pratos'}}</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Descrição</th>
+    <th>Preço</th>
+    <th>URL</th>
+    <th>Deletar</th>
+  </tr>
+  <tr *ngFor="let prato of pratos">
+    <td>{{ prato.id }}</td>
+    <td>{{ prato.name }}</td>
+    <td>{{ prato.description }}</td>
+    <td>{{ prato.price | currency:'BRL' }}</td>
+    <td>
+      <a *ngIf="prato.url" [href]="prato.url" target="_blank">Visitar</a>
+    </td>
+    <td>
+      <button (click)="deletePrato(prato.id!)">Deletar</button>
+    </td>
+  </tr>
+</table>
+
+<a routerLink="/add-prato">Adicionar Novo Prato</a>

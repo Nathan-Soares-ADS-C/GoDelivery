@@ -1,0 +1,21 @@
+<div class="Lista de Pedidos">
+  <h2>Comanda</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Status</th>
+        <th>Descrição</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of pedidosFiltrados">
+        <td>{{ pedido.id }}</td>
+        <td [ngStyle]="{ 'color': 'green' }">{{ pedido.status }}</td>
+        <td>{{ pedido.lanches }}</td>
+        <td><button class="save" (click)="atualizarStatus(pedido, 'Concluído')">Pronto</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

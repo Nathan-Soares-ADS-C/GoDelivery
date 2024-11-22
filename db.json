@@ -1,0 +1,32 @@
+{
+  "pratos": [
+    {
+      "id": "1",
+      "name": "Camarão",
+      "description": "Prato sofisticado com camarões suculentos ao molho de ervas.",
+      "price": 40,
+      "url": "https://preview.redd.it/0r7sfdqzac1e1.png?width=230&format=png&auto=webp&s=e74252930d99cfdb67c6794aecf39f2cc6b71455"
+    },
+    {
+      "id": "2",
+      "name": "Misto-Quente",
+      "description": "Sanduíche clássico com pão crocante, recheado com presunto e queijo.",
+      "price": 10,
+      "url": "https://preview.redd.it/t750odqzac1e1.png?width=230&format=png&auto=webp&s=fc13d11a25cab4318cc4777da8bbcb94b699cadc"
+    },
+    {
+      "id": "3",
+      "name": "Salada de Frutas",
+      "description": "Salada refrescante com frutas variadas, rica em sabores tropicais.",
+      "price": 12,
+      "url": "https://preview.redd.it/tm4w9fqzac1e1.png?width=230&format=png&auto=webp&s=b2156bf6b8b19f5e4ce73852ab725fb9bd3aefe4"
+    },
+    {
+      "id": "4",
+      "name": "Carpaccio de abobrinha",
+      "description": "Carpaccio de abobrinha finamente fatiada, temperado com azeite, limão e lascas de parmesão.",
+      "price": 40,
+      "url": "https://preview.redd.it/8hnjzeqzac1e1.png?width=230&format=png&auto=webp&s=5ad2afe2499cedfcfc05d66f8dd99e15d719108a"
+    }
+  ]
+}

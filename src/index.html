@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DishApp</title>
+  <title>GoDelivery</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="https://preview.redd.it/23n529eupc1e1.png?auto=webp&s=bf940f50e1627207d801323f3d00013e25551bac">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <header>
+    <nav id="navbar">
+        <i class="fa-solid fa-burger" id="nav_logo" >GoDelivery</i>
+
+        <ul id="nav_list">
+          <li class="nav_item"><a href="/">Home</a></li>
+
+          <li class="nav_item"><a href="/cardapio">Cardápio</a></li>
+
+          <li class="nav_item"><a href="/pedido">Pedidos</a></li>
+        </ul>
+        <a href="/carrinho">
+          <button id="cart_btn">
+            <img src="https://preview.redd.it/kkkkkkkkkkkkkk-v0-be20zt0awf2e1.png?auto=webp&s=758252230009ed2d2619009fafe95e6bec226912" alt="" class="cart_img">
+          </button>
+        </a>
+    </nav>
+</header>
+
   <app-root></app-root>
 </body>
 </html>

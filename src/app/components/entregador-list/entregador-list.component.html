@@ -1,0 +1,23 @@
+<h2>Lista de Pedidos</h2>
+<div class="Pedidos a serem entregues">
+
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZsd2cwd2w0b2VpamZod2hjYXU1dG1jbHBsZ3poeml0OGJud3J2cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DHONDy3qsYbWtVVkIa/giphy.webp" alt="">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Status</th>
+        <th>Descrição</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of pedidosFiltrados">
+        <td>{{ pedido.id }}</td>
+        <td [ngStyle]="{ 'color': 'green' }">{{ pedido.status }}</td>
+        <td>{{ pedido.lanches }}</td>
+        <td><button class="save" (click)="atualizarStatus(pedido, 'Rota de Entrega')">Pronto</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

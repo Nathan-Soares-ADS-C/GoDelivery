@@ -1,0 +1,21 @@
+<div class="pedido-list">
+  <h2>Lista de Pedidos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Valor Total</th>
+        <th>Status</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pedido of pedidos">
+        <td>{{ pedido.id }}</td>
+        <td>{{ pedido.valorTotal | currency:'BRL' }}</td>
+        <td [ngStyle]="{ 'color': 'green' }">{{ pedido.status }}</td>
+        <td>{{ pedido.lanches }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

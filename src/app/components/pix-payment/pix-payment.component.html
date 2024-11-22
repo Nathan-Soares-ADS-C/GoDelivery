@@ -1,0 +1,13 @@
+<div class="payment-pix-container">
+    <h2>Pagar com PIX</h2>
+    <div class="pix-qr-code">
+      <img src="https://preview.redd.it/yavprbtntc2e1.png?auto=webp&s=505fe3e69258f5f1b65bdec00131983e1ca8c31d" alt="QR Code do PIX" />
+    </div>
+    <div class="total">
+      <p *ngIf="ultimoPedido">
+        <strong>Total do Pedido: {{ ultimoPedido.valorTotal | currency:'BRL' }}</strong>
+      </p>
+    </div>
+    <p>Após efetuar o pagamento, clique no botão abaixo:</p>
+    <a href="/pedido"><button class="save" (click)="atualizarStatus( ultimoPedido, 'Pagamento aprovado')">Pronto</button></a>
+  </div>

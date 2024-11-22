@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+@import url('testmonials.css');
+@import url('footer.css');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    border-left: 80px solid #ffffff;  /* Borda de 50px na lateral esquerda */
+    border-right: 80px solid #ffffff; /* Borda de 50px na lateral direita */
+}
+section {
+  padding: 28px 8%;
+}
+#home {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+}
+
+.shape {
+  background-color: #ffe8b4;
+  width: 45%;
+  height: 550px;
+  position: absolute;
+  border-radius: 40% 30% 0% 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#banner {
+  width: 50%;
+  z-index: 2;
+  display: flex;
+  position: relative; /* Remove o posicionamento absoluto */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+}
+
+#banner img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+
+}
+
+#cta {
+
+  width: 50%;
+}
+
+#cta .title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#cta .description {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.remove-icon {
+  cursor: pointer;
+  color: #1d1d1d; /* Cor de destaque para a lixeira */
+  font-size: 1.5rem;
+  margin-left: 10px; /* Espaço entre o botão e o ícone de lixeira */
+}
+
+.remove-icon:hover {
+  color: #ff4c33;
+}
+
+.btn-default:hover {
+  background-color: #f8d477;
+
+}
+
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d1d1d;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow .3s ease;
+}
+
+.funcionario {
+  width: 90px;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.photo img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid #ccc; /* Opcional: borda para destaque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opcional: sombra para visual mais elegante */
+}
+
+
+.section-title {
+  color: #e9a209;
+  font-size: 1.563rem;
+}
+
+.section-subtitle {
+  font-size: 2.1875rem;
+}
